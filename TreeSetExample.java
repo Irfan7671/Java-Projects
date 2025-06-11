@@ -1,22 +1,21 @@
-package professional;
+package xyz;
 
 import java.util.TreeSet;
 
 public class TreeSetExample {
 
 	public static void main(String[] args) {
-		TreeSet<Integer> num = new TreeSet<Integer>();
-		num.add(10);
-		num.add(30);
-		num.add(50);
-		num.add(20);
-		num.add(40);
-		System.out.println(num);
-		System.out.println(num.first());
-		System.out.println(num.higher(30));
-		System.out.println(num.size());
-		System.out.println(num.reversed());
-		System.out.println(num.lower(30));
+		TreeSet<Integer> books = new TreeSet<Integer>();
+		books.add(5002);
+		books.add(4998);
+		books.add(5005);
+		books.add(4999);
+		books.add(5001);
+		System.out.println(books);
+		System.out.println("The first book ID is : "+books.first());
+		System.out.println("The Last book ID is : "+books.last());
+		System.out.println("The Id just greater than 4999 : "+books.higher(4999));
+		System.out.println("The Id just lower than 5005 : "+books.lower(5005));
 
 	}
 
